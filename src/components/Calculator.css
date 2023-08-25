@@ -1,0 +1,56 @@
+h1,
+.p {
+  text-align: right;
+}
+.div {
+  height: fit-content;
+  width: 250px;
+  background-color: dimgrey;
+}
+button {
+  width: 21%;
+  text-align: center;
+  padding-bottom: 4px;
+  margin: 4px 4px;
+  border: none;
+  background-color: lightgray;
+}
+button:hover {
+  opacity: 0.7;
+}
+.output {
+  opacity: 0.5;
+}
+.input {
+  font-size: xx-large;
+  opacity: 1;
+}
+.head {
+  display: block;
+  width: 90px;
+  text-align: center;
+  margin: 0px auto 14px auto;
+  background-color: lightgray;
+}
+.grey {
+  background-color: lightslategrey;
+}
+.red {
+  background-color: lightcoral;
+}
+.orange {
+  visibility: none;
+  background-color: lightsalmon;
+}
+.screen {
+  background-color: lightgreen;
+  overflow-x: scroll;
+}
+.fake {
+  width: 70%;
+  font-size: 13px;
+  background-color: dimgray;
+  border: solid 3px lightgray;
+  color: lightyellow;
+  pointer-events: none;
+}

@@ -1,4 +1,4 @@
-[# React + TypeScript + Vite](https://danxgaming.github.io/calculator-react-project/)
+functioning calculator designed and programmed by me- https://danxgaming.github.io/calculator-react-project/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

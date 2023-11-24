@@ -21,124 +21,100 @@ function Calculator() {
     }
   };
   return (
-    <>
-      <div className="div flex mx-auto mt-5 rounded-3 p-3">
-        <p className="rounded head">Calculator</p>
-        <div className="screen w-full rounded  px-2 mb-3">
-          <p className="p">
+    <div className="wrapper">
+      <div className="container">
+        <div className="screen">
+          <p>
             <span className="output">({result})</span>
             <span className="input">{calc}</span>
           </p>
         </div>
-        <div>
+        <div className="buttons-grid">
           <button
-            onClick={() => updateCalc("7")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("7")}>
             7
           </button>
           <button
-            onClick={() => updateCalc("8")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("8")}>
             8
           </button>
           <button
-            onClick={() => updateCalc("9")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("9")}>
             9
           </button>
           <button
             onClick={() => updateCalc("/")}
-            className="grey  rounded-1 "
-          >
-            /
+            className="function-btn ">
+            ÷
           </button>
           <button
-            onClick={() => updateCalc("4")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("4")}>
             4
           </button>
           <button
-            onClick={() => updateCalc("5")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("5")}>
             5
           </button>
           <button
-            onClick={() => updateCalc("6")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("6")}>
             6
           </button>
           <button
             onClick={() => updateCalc("*")}
-            className="grey rounded-1 "
-          >
-            *
+            className="function-btn">
+            x
           </button>
           <button
-            onClick={() => updateCalc("1")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("1")}>
             1
           </button>
           <button
-            onClick={() => updateCalc("2")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("2")}>
             2
           </button>
           <button
-            onClick={() => updateCalc("3")}
-            className=" rounded-1 "
-          >
+            className="digit-btn"
+            onClick={() => updateCalc("3")}>
             3
           </button>
           <button
             onClick={() => updateCalc("-")}
-            className="grey  rounded-1 "
-          >
+            className="function-btn ">
             -
           </button>
           <button
             onClick={() => window.location.reload()}
-            className="red  rounded-1 "
-          >
+            className="clear-btn">
             CE
           </button>
-          <button
-            onClick={() => updateCalc("0")}
-            className=" rounded-1 "
-          >
-            0
-          </button>
+          <button onClick={() => updateCalc("0")}>0</button>
           <button
             onClick={() => updateCalc(".")}
-            className="dot rounded-1 "
-          >
-            .
+            className="dec-btn">
+            •
           </button>
           <button
             onClick={() => updateCalc("+")}
-            className="grey  rounded-1 "
-          >
+            className="function-btn">
             +
           </button>
-          <button className="fake orange equal rounded-1 ">
-            -Daniel Juan Aliphon
-          </button>
+          <button className="brand">© 2023 Daniel Juan Aliphon</button>
           <button
             onClick={() => setCalc(result)}
-            className="orange equal rounded-1 "
-          >
+            className="equate-btn">
             =
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
